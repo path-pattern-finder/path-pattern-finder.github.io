@@ -101,9 +101,7 @@ Call ```PathPatternFinder``` as an application with a single wildcard argument.
 This will
 
 1. recursively search the current working directory for files matching the wildcard argument (a glob)
-
 2. find the pattern
-
 3. print the pattern to the console
 
 
@@ -112,7 +110,6 @@ This will
 
 
 * Images from microscopes often come in a sequential manner, with the sequence encoded in the file-path. This library helps find the sequence. 
-
 * It is similarly used by the Anchor image analysis software suite.
 
 
