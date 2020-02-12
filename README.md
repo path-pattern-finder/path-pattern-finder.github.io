@@ -6,11 +6,11 @@
 
 
 
-**path-pattern finder** is a Java library (and basic command line app) to find patterns in a list of strings or paths, using a particular set of rules.
+**path-pattern finder** is a Java library to find patterns in a list of strings or paths, using a particular set of rules. A basic command-line app also exists.
 
 
 
-It is useful when you wish to translate a set of file-paths into their constant and non-constant (variable) components.
+One can translate a set of file-paths into their constant and non-constant (variable) components.
 
 
 
@@ -36,8 +36,7 @@ where {0} indexes each component.
 
 ## Example
 
-For example, this is the output from a directory (with several nested sub-directories) of pictures from a holiday in Italy.
-
+Consider a directory of picture files (with several nested sub-directories).
 
 
 Files take the form:
