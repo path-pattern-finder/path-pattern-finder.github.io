@@ -17,13 +17,9 @@ It is useful when you wish to translate a set of file-paths into their constant 
 e.g. consider some paths
 
 ```
-
 somedir/somefilename_001.txt
-
 somedir/somefilename_002.txt
-
 somedir/somefilename_003.txt
-
 ```
 
 
@@ -31,9 +27,7 @@ somedir/somefilename_003.txt
 In this case, the library would find the pattern:
 
 ```
-
 somedir/somefilename_{0}.txt
-
 ```
 
 where {0} indexes each component.
@@ -42,8 +36,6 @@ where {0} indexes each component.
 
 ## Example
 
-
-
 For example, this is the output from a directory (with several nested sub-directories) of pictures from a holiday in Italy.
 
 
@@ -51,25 +43,15 @@ For example, this is the output from a directory (with several nested sub-direct
 Files take the form:
 
 ```
-
 C:\Users\Owen\Pictures\Holidays\Italy at Easter (March 2013)\Milan\2013-04-02 20.07.42.jpg
-
 C:\Users\Owen\Pictures\Holidays\Italy at Easter (March 2013)\Milan\IMG_4677.JPG
-
 C:\Users\Owen\Pictures\Holidays\Italy at Easter (March 2013)\Milan\IMG_4678.JPG
-
 C:\Users\Owen\Pictures\Holidays\Italy at Easter (March 2013)\Milan\IMG_4682.JPG
-
 ...
-
 C:\Users\Owen\Pictures\Holidays\Italy at Easter (March 2013)\Verona\IMG_4252.JPG
-
 C:\Users\Owen\Pictures\Holidays\Italy at Easter (March 2013)\Verona\IMG_4255.JPG
-
 C:\Users\Owen\Pictures\Holidays\Italy at Easter (March 2013)\Verona\IMG_4261.JPG
-
 etc.
-
 ```
 
 
@@ -77,17 +59,13 @@ etc.
 The command-line app would produce:
 
 ```
-
 There are 274 input paths in total
 
 Pattern is: C:\Users\Owen\Pictures\Archived\Holidays\Italy at Easter (March 2013)\${0}\${1}${2}.jpg
 
 ${0} = 6 unique strings e.g. "Venice" (145), "Milan" (38), "Verona" (34)
-
 ${1} = "IMG_" (273) | "2013-04-02 20.07." (1)
-
 ${2} = 274 unique integers between 42 and 4766 inclusive
-
 ```
 
 
@@ -131,7 +109,6 @@ This will
 
 
 ## Applications
-
 
 
 * Images from microscopes often come in a sequential manner, with the sequence encoded in the file-path. This library helps find the sequence. 
