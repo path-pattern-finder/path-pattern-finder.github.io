@@ -1,37 +1,147 @@
-## Welcome to GitHub Pages
+# path-pattern-finder
 
-You can use the [editor on GitHub](https://github.com/path-pattern-finder/path-pattern-finder.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Description
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+**path-pattern finder** is a Java library (and basic command line app) to find patterns in a list of strings or paths, using a particular set of rules.
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+It is useful when you wish to translate a set of file-paths into their constant and non-constant (variable) components.
 
-[Link](url) and ![Image](src)
+
+
+e.g. consider some paths
+
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+somedir/somefilename_001.txt
 
-### Jekyll Themes
+somedir/somefilename_002.txt
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/path-pattern-finder/path-pattern-finder.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+somedir/somefilename_003.txt
 
-### Support or Contact
+```
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+
+In this case, the library would find the pattern:
+
+```
+
+somedir/somefilename_{0}.txt
+
+```
+
+where {0} indexes each component.
+
+
+
+## Example
+
+
+
+For example, this is the output from a directory (with several nested sub-directories) of pictures from a holiday in Italy.
+
+
+
+Files take the form:
+
+```
+
+C:\Users\Owen\Pictures\Holidays\Italy at Easter (March 2013)\Milan\2013-04-02 20.07.42.jpg
+
+C:\Users\Owen\Pictures\Holidays\Italy at Easter (March 2013)\Milan\IMG_4677.JPG
+
+C:\Users\Owen\Pictures\Holidays\Italy at Easter (March 2013)\Milan\IMG_4678.JPG
+
+C:\Users\Owen\Pictures\Holidays\Italy at Easter (March 2013)\Milan\IMG_4682.JPG
+
+...
+
+C:\Users\Owen\Pictures\Holidays\Italy at Easter (March 2013)\Verona\IMG_4252.JPG
+
+C:\Users\Owen\Pictures\Holidays\Italy at Easter (March 2013)\Verona\IMG_4255.JPG
+
+C:\Users\Owen\Pictures\Holidays\Italy at Easter (March 2013)\Verona\IMG_4261.JPG
+
+etc.
+
+```
+
+
+
+The command-line app would produce:
+
+```
+
+There are 274 input paths in total
+
+Pattern is: C:\Users\Owen\Pictures\Archived\Holidays\Italy at Easter (March 2013)\${0}\${1}${2}.jpg
+
+${0} = 6 unique strings e.g. "Venice" (145), "Milan" (38), "Verona" (34)
+
+${1} = "IMG_" (273) | "2013-04-02 20.07." (1)
+
+${2} = 274 unique integers between 42 and 4766 inclusive
+
+```
+
+
+
+## How to use?
+
+Either as a Java library, or a command-line tool.
+
+Being pure Java, it works on Windows, Linux, Mac and several other operating systems.
+
+A distribution (including a .exe launcher) is available for [download](https://bitbucket.org/path-pattern-finder/path-pattern-finder/downloads/).
+
+### As a library
+
+
+
+Call an appropriate static method in ```com.owenfeehan.pathpatternfinder.PathPatternFinder```  (e.g. ```findPatternPath``` or ```findPatternStr```)
+
+
+
+See the Javadocs for more detailed code documentation.
+
+
+
+### As a command-line app
+
+
+
+Call ```PathPatternFinder``` as an application with a single wildcard argument.
+
+
+
+This will
+
+1. recursively search the current working directory for files matching the wildcard argument (a glob)
+
+2. find the pattern
+
+3. print the pattern to the console
+
+
+
+## Applications
+
+
+
+* Images from microscopes often come in a sequential manner, with the sequence encoded in the file-path. This library helps find the sequence. 
+
+* It is similarly used by the Anchor image analysis software suite.
+
+
+
+## Author
+
+
+
+[Owen Feehan](http://www.owenfeehan.com) distributed under MIT license.
