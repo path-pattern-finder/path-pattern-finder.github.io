@@ -67,13 +67,14 @@ The [latest distribution release](https://github.com/path-pattern-finder/path-pa
 
 The [latest JARs](https://github.com/path-pattern-finder/path-pattern-finder/packages/126777) are stored in GitHub Packages maven repository.
 
+
 # Usage
 
 Either as a Java library, or a command-line tool.
 
 Being pure Java, it works on Windows, Linux, Mac and several other operating systems.
 
-A distribution (including a .exe launcher) is available for [download](https://bitbucket.org/path-pattern-finder/path-pattern-finder/downloads/).
+An `.exe` launcher and Linux wrapper-script are included in the [distribution](https://github.com/path-pattern-finder/path-pattern-finder-dist/releases/latest) for easy command-line use in Windows and Linux.
 
 After unpacking the `zip`/`tar.gz` distribution, it is advisable to add the `bin/` directory to the system path.
 
