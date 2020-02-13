@@ -83,7 +83,7 @@ After unpacking the `zip`/`tar.gz` distribution, it is advisable to add the `bin
 Call ```path-pattern-finder``` as an application with one or more wildcard arguments e.g.
 
 ```
-path-pattern-finder *.jpg *.gif
+path-pattern-finder *.jpg *.png
 ```
 
 This will
