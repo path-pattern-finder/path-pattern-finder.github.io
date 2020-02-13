@@ -1,12 +1,7 @@
-# path-pattern-finder
+# Description
 
 
-
-## Description
-
-
-
-**path-pattern finder** is a Java library to find patterns in a list of strings or paths, using a particular set of rules. A basic command-line app also exists.
+**path-pattern finder** is a Java library to find patterns in a list of strings or paths, using a particular set of rules. A command-line app for basic usage is also included.
 
 
 
@@ -31,8 +26,6 @@ somedir/somefilename_{0}.txt
 ```
 
 where {0} indexes each component.
-
-
 
 ## Example
 
@@ -66,10 +59,15 @@ ${0} = 6 unique strings e.g. "Venice" (145), "Milan" (38), "Verona" (34)
 ${1} = "IMG_" (273) | "2013-04-02 20.07." (1)
 ${2} = 274 unique integers between 42 and 4766 inclusive
 ```
+The number in parantheses describes the number of files in a particular category.
 
+# Download
 
+The [latest distribution release](https://github.com/path-pattern-finder/path-pattern-finder-dist/releases/latest) as well as [source-code](https://github.com/path-pattern-finder/path-pattern-finder) are both available to download on GitHub.
 
-## How to use?
+The [latest JARs](https://github.com/path-pattern-finder/path-pattern-finder/packages/126777) are stored in GitHub Packages maven repository.
+
+# Usage
 
 Either as a Java library, or a command-line tool.
 
@@ -77,43 +75,39 @@ Being pure Java, it works on Windows, Linux, Mac and several other operating sys
 
 A distribution (including a .exe launcher) is available for [download](https://bitbucket.org/path-pattern-finder/path-pattern-finder/downloads/).
 
-### As a library
+After unpacking the `zip`/`tar.gz` distribution, it is advisable to add the `bin/` directory to the system path.
+
+## ...as a command-line app
 
 
+Call ```path-pattern-finder``` as an application with one or more wildcard arguments e.g.
+
+```
+path-pattern-finder *.jpg *.gif
+```
+
+This will
+
+1. recursively search the current working directory for files matching the wildcard arguments (a glob)
+2. find the pattern
+3. print the pattern to the console
+ 
+## ...as a library
 
 Call an appropriate static method in ```com.owenfeehan.pathpatternfinder.PathPatternFinder```  (e.g. ```findPatternPath``` or ```findPatternStr```)
-
-
 
 See the Javadocs for more detailed code documentation.
 
 
-
-### As a command-line app
-
+# Applications
 
 
-Call ```PathPatternFinder``` as an application with a single wildcard argument.
+* Images from microscopes often come in a sequential manner, with the sequence encoded in the file-path.
+* Images from digital-cameras are often sequenced by time or number. 
+* The [Anchor image analysis software suite](http://www.anchoranalysis.org) used the library to guess patterns in image files.
 
 
-
-This will
-
-1. recursively search the current working directory for files matching the wildcard argument (a glob)
-2. find the pattern
-3. print the pattern to the console
-
-
-
-## Applications
-
-
-* Images from microscopes often come in a sequential manner, with the sequence encoded in the file-path. This library helps find the sequence. 
-* It is similarly used by the Anchor image analysis software suite.
-
-
-
-## Author
+# Author
 
 
 
