@@ -63,7 +63,7 @@ The number in parantheses describes the number of files in a particular category
 
 # Download
 
-The [latest distribution release](https://github.com/path-pattern-finder/path-pattern-finder-dist/releases/latest) as well as [source-code](https://github.com/path-pattern-finder/path-pattern-finder) are both available to download on GitHub.
+The [latest release](https://github.com/path-pattern-finder/path-pattern-finder-dist/releases/latest) as well as [source-code](https://github.com/path-pattern-finder/path-pattern-finder) are both available to download on GitHub.
 
 The [latest JARs](https://github.com/path-pattern-finder/path-pattern-finder/packages/126777) are stored in GitHub Packages maven repository.
 
