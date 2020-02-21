@@ -65,7 +65,7 @@ The number in parantheses describes the number of files in a particular category
 
 The [latest release](https://github.com/path-pattern-finder/path-pattern-finder-dist/releases/latest) as well as [source-code](https://github.com/path-pattern-finder/path-pattern-finder) are both available to download on GitHub.
 
-The [latest JARs](https://github.com/path-pattern-finder/path-pattern-finder/packages/126777) are stored in GitHub Packages maven repository.
+The [latest JARs](https://github.com/path-pattern-finder/path-pattern-finder/packages/126777) are stored in [GitHub Packages](https://github.com/features/packages) maven repository. Note that [authentication is required](https://github.github.com/maven-plugins/site-plugin/authentication.html) via a GitHub token.
 
 
 # Usage
