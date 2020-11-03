@@ -1,7 +1,7 @@
-# Description
+# Find patterns in paths
 
 
-**path-pattern finder** is a Java library to find patterns in a list of strings or paths, using a particular set of rules. A command-line app for basic usage is also included.
+**path-pattern finder** is a Java library to find naming-patterns in a list of strings or paths, using a particular set of rules. A command-line app for basic usage is also included.
 
 
 
