@@ -95,7 +95,19 @@ This will
  
 ## ...as a library
 
-Call an appropriate static method in ```com.owenfeehan.pathpatternfinder.PathPatternFinder```  (e.g. ```findPatternPath``` or ```findPatternStr```)
+Use the methods in [PathPatternFinder](https://path-pattern-finder.github.io/javadoc/com/owenfeehan/pathpatternfinder/PathPatternFinder.html) to find patterns. e.g. ```findPatternPaths``` or ```findPatternStrings```.
+
+```java
+import com.owenfeehan.pathpatternfinder.PathPatternFinder;
+Pattern pattern = PathPatternFinder.findPatternPaths(paths, IOCase.INSENSITIVE);
+```
+
+Or to find the common root-directories of a list of paths, see [FindCommonPathElements](https://path-pattern-finder.github.io/javadoc/com/owenfeehan/pathpatternfinder/commonpath/FindCommonPathElements.html).
+
+```java
+import com.owenfeehan.pathpatternfinder.commonpath.FindCommonPathElements;
+Optional<Path> commonPath = FindCommonPathElements.findForFilePaths(paths);
+```
 
 See the [Javadoc](javadoc/) for more detailed code documentation.
 
