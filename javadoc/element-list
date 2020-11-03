@@ -1,0 +1,10 @@
+com.owenfeehan.pathpatternfinder
+com.owenfeehan.pathpatternfinder.commonpath
+com.owenfeehan.pathpatternfinder.describer
+com.owenfeehan.pathpatternfinder.describer.frequencymap
+com.owenfeehan.pathpatternfinder.describer.frequencymap.integer
+com.owenfeehan.pathpatternfinder.patternelements
+com.owenfeehan.pathpatternfinder.patternelements.resolved
+com.owenfeehan.pathpatternfinder.patternelements.unresolved
+com.owenfeehan.pathpatternfinder.trim
+com.owenfeehan.pathpatternfinder.trim.constantsubstring

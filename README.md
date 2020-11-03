@@ -97,7 +97,7 @@ This will
 
 Call an appropriate static method in ```com.owenfeehan.pathpatternfinder.PathPatternFinder```  (e.g. ```findPatternPath``` or ```findPatternStr```)
 
-See the [Javadocs](javadocs/) for more detailed code documentation.
+See the [Javadoc](javadoc/) for more detailed code documentation.
 
 
 # Applications
