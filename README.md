@@ -119,6 +119,9 @@ See the [Javadoc](javadoc/) for more detailed code documentation.
 * Images from digital-cameras are often sequenced by time or number. 
 * The [Anchor image analysis software suite](http://www.anchoranalysis.org) used the library to guess patterns in image files.
 
+# Source
+
+[Source code](https://github.com/path-pattern-finder/path-pattern-finder) can be found on [GitHub](https://github.com/path-pattern-finder), together with [artifacts](https://github.com/orgs/path-pattern-finder/packages) and [continuous integration](https://github.com/path-pattern-finder/path-pattern-finder/tree/master/.github/workflows). Code quality metrics are found on [SonarCloud](https://sonarcloud.io/dashboard?id=path-pattern-finder_path-pattern-finder).
 
 # Author
 
