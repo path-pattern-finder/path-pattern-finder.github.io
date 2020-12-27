@@ -5,5 +5,5 @@ show_downloads: true
 google_analytics: UA-158521278-1
 
 github:
-  zip_url: https://github.com/path-pattern-finder/path-pattern-finder-dist/releases/download/1.4.4/path-pattern-finder-1.4.4.zip
-  tar_url: https://github.com/path-pattern-finder/path-pattern-finder-dist/releases/download/1.4.4/path-pattern-finder-1.4.4.tar.gz
+  zip_url: https://github.com/path-pattern-finder/path-pattern-finder-distribution/releases/download/1.4.4/path-pattern-finder-1.4.4.zip
+  tar_url: https://github.com/path-pattern-finder/path-pattern-finder-distribution/releases/download/1.4.4/path-pattern-finder-1.4.4.tar.gz
