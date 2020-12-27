@@ -63,7 +63,7 @@ The number in parantheses describes the number of files in a particular category
 
 # Download
 
-The [latest release](https://github.com/path-pattern-finder/path-pattern-finder-dist/releases/latest) as well as [source-code](https://github.com/path-pattern-finder/path-pattern-finder) are both available to download on GitHub.
+The [latest release](https://github.com/path-pattern-finder/path-pattern-finder-distribution/releases/latest) as well as [source-code](https://github.com/path-pattern-finder/path-pattern-finder) are both available to download on GitHub.
 
 The [latest JARs](https://github.com/path-pattern-finder/path-pattern-finder/packages/126777) are stored in [GitHub Packages](https://github.com/features/packages) maven repository. Note that [authentication is required](https://github.github.com/maven-plugins/site-plugin/authentication.html) via a GitHub token.
 
@@ -74,7 +74,7 @@ Either as a Java library, or a command-line tool.
 
 Being pure Java, it works on Windows, Linux, Mac and several other operating systems.
 
-An `.exe` launcher and Linux wrapper-script are included in the [distribution](https://github.com/path-pattern-finder/path-pattern-finder-dist/releases/latest) for easy command-line use in Windows and Linux.
+An `.exe` launcher and Linux wrapper-script are included in the [distribution](https://github.com/path-pattern-finder/path-pattern-finder-distribution/releases/latest) for easy command-line use in Windows and Linux.
 
 After unpacking the `zip`/`tar.gz` distribution, it is advisable to add the `bin/` directory to the system path.
 
