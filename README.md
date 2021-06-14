@@ -99,7 +99,7 @@ Use the methods in [PathPatternFinder](https://path-pattern-finder.github.io/jav
 
 ```java
 import com.owenfeehan.pathpatternfinder.PathPatternFinder;
-Pattern pattern = PathPatternFinder.findPatternPaths(paths, IOCase.INSENSITIVE);
+Pattern pattern = PathPatternFinder.findPatternPaths(paths, IOCase.INSENSITIVE, true);
 ```
 
 Or to find the common root-directories of a list of paths, see [FindCommonPathElements](https://path-pattern-finder.github.io/javadoc/com/owenfeehan/pathpatternfinder/commonpath/FindCommonPathElements.html).
