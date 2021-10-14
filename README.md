@@ -117,7 +117,7 @@ See the [Javadoc](javadoc/) for more detailed code documentation.
 
 * Images from microscopes often come in a sequential manner, with the sequence encoded in the file-path.
 * Images from digital-cameras are often sequenced by time or number. 
-* The [Anchor image analysis software suite](http://www.anchoranalysis.org) used the library to guess patterns in image files.
+* The [Anchor image analysis software suite](http://www.anchoranalysis.org) uses the library to guess patterns in image files.
 
 # Source
 
