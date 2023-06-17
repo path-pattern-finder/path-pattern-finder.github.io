@@ -63,9 +63,17 @@ The number in parantheses describes the number of files in a particular category
 
 # Download
 
-The [latest release](https://github.com/path-pattern-finder/path-pattern-finder-distribution/releases/latest) as well as [source-code](https://github.com/path-pattern-finder/path-pattern-finder) are both available to download on GitHub.
+The [latest JARs](https://github.com/path-pattern-finder/path-pattern-finder/packages/126777) are stored in [Maven Central](https://search.maven.org/).
 
-The [latest JARs](https://github.com/path-pattern-finder/path-pattern-finder/packages/126777) are stored in [GitHub Packages](https://github.com/features/packages) maven repository. Note that [authentication is required](https://github.github.com/maven-plugins/site-plugin/authentication.html) via a GitHub token.
+```xml
+<dependency>
+    <groupId>com.owenfeehan.pathpatternfinder</groupId>
+    <artifactId>path-pattern-finder</artifactId>
+    <version>1.7.1</version>
+</dependency>
+```
+
+If not using maven, a tar.gz distribution (that contains a Windows launcher binary, and a Linux launcher script) can be [downloaded](https://github.com/path-pattern-finder/path-pattern-finder-distribution/releases/latest) from GitHub.
 
 
 # Usage
